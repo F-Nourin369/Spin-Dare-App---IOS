@@ -1,4 +1,4 @@
-**##Spin Dare**
+**#Spin Dare**
 A customizable and interactive dare game for friends, built with SwiftUI.
 
 **About the App**
