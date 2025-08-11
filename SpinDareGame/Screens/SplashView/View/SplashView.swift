@@ -11,49 +11,57 @@ struct SplashView: View {
     
     @State var isAnimating: Bool = false
     @State var showSplash: Bool = true
-    @State var showGame: Bool = false
+    @State var zoomIn : Bool = false
+    @State var showAppName: Bool = false
     
     var body: some View {
         VStack {
-        if showSplash {
+            if showSplash {
                 ZStack {
                     Color.black.edgesIgnoringSafeArea(.all)
-                    VStack (spacing: 12) {
-                        if !showGame {
-                            Text("Do You")
-                                .foregroundStyle(.white)
-                                .font(.system(size: 35, weight: .semibold))
-                            
-                            Text("Dare ?")
-                                .foregroundStyle(.redTheme)
-                                .font(.system(size: 50 , weight: isAnimating ? .bold : .semibold))
-                                .opacity(isAnimating ? 1 : 0)
-                                .offset(x: isAnimating ? 0  : 500)
-                                .animation(.easeInOut(duration: 0.5), value: isAnimating)
-                        }
-                        else{
-                            AppNameView()
+                    VStack (spacing: 0) {
+                        Text("Do You")
+                            .foregroundStyle(.white)
+                            .font(.system(size: 35))
+                            .padding(.bottom,0)
+                        VStack(alignment: .leading, spacing: 0) {
+                            ZStack {
+                                Text("Dare?")
+                                    .font(.system(size: 100, weight: .bold))
+                                    .foregroundColor(.clear)
+                                    .overlay(  LinearGradient(colors: [.red, .red], startPoint: .leading, endPoint: .trailing)
+                                        .mask( Text("Dare?")
+                                            .font(.system(size: 100, weight: .bold))
+                                        ))
+                                    .scaleEffect(zoomIn ? 1 : 100)
+                            }
+                            if showAppName {
+                                VStack {
+                                    Text("#Darely")
+                                        .foregroundStyle(.yellow)
+                                        .font(.system(size: 30))
+                                        .padding(.leading, 30)
+                                }
+                            }
                         }
                     }
                 }
             }
             else{
-                AppNameView()
-                    .transition(.move(edge: .trailing))
             }
         }
-            .onAppear() {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    self.isAnimating = true
+        .onAppear() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                withAnimation(.easeInOut(duration: 1)) {
+                    zoomIn = true
                 }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                    self.showGame = true
-                }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                    self.showSplash = false
-                }
-                
             }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                withAnimation(.easeInOut(duration: 1)) {
+                    showAppName = true
+                }
+            }
+        }
     }
 }
 
