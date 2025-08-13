@@ -48,6 +48,7 @@ struct SplashView: View {
                 }
             }
             else{
+                PlayerCountView()
             }
         }
         .onAppear() {
@@ -60,6 +61,9 @@ struct SplashView: View {
                 withAnimation(.easeInOut(duration: 1)) {
                     showAppName = true
                 }
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+               showSplash = false
             }
         }
     }
