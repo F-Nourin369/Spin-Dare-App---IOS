@@ -63,6 +63,21 @@
 			path = SpinDareGameUITests;
 			sourceTree = "<group>";
 		};
+		265B77FA2E5324FF00D22B49 /* Domain */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		265B77FC2E53251300D22B49 /* Infra */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		265B77FE2E53256600D22B49 /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +108,9 @@
 		264108062E45BE0B00120501 = {
 			isa = PBXGroup;
 			children = (
+				265B77FE2E53256600D22B49 /* App */,
+				265B77FC2E53251300D22B49 /* Infra */,
+				265B77FA2E5324FF00D22B49 /* Domain */,
 				263EB6EE2E49E59400CF8589 /* Screens */,
 				264108112E45BE0B00120501 /* SpinDareGame */,
 				2641081F2E45BE0C00120501 /* SpinDareGameTests */,
@@ -129,6 +147,9 @@
 			fileSystemSynchronizedGroups = (
 				263EB6EE2E49E59400CF8589 /* Screens */,
 				264108112E45BE0B00120501 /* SpinDareGame */,
+				265B77FA2E5324FF00D22B49 /* Domain */,
+				265B77FC2E53251300D22B49 /* Infra */,
+				265B77FE2E53256600D22B49 /* App */,
 			);
 			name = SpinDareGame;
 			packageProductDependencies = (

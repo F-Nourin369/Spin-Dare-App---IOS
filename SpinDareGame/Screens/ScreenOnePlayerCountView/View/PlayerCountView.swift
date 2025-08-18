@@ -23,17 +23,17 @@ struct PlayerCountView: View {
                             .font(.system(size: 35, weight: .bold))
                             .foregroundStyle(.black)
                             .padding()
-//                        CounterView(viewModel: viewModel)
-                        Picker("Select number of players", selection: $viewModel.playerCount) {
-                            ForEach(viewModel.playerRange, id: \.self) { number in
-                                Text("\(number)").tag(number)
-                                    .font(.system(size: 30, weight: .bold))
-                                    .padding()
-                            }
-                        }
-                        .pickerStyle(WheelPickerStyle())
-                        .frame(height: 300)
-                        .clipped()
+                        CounterView(viewModel: viewModel)
+//                        Picker("Select number of players", selection: $viewModel.playerCount) {
+//                            ForEach(viewModel.playerRange, id: \.self) { number in
+//                                Text("\(number)").tag(number)
+//                                    .font(.system(size: 30, weight: .bold))
+//                                    .padding()
+//                            }
+//                        }
+//                        .pickerStyle(WheelPickerStyle())
+//                        .frame(height: 300)
+//                        .clipped()
                         Button {
                             
                         } label: {
