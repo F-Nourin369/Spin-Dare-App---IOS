@@ -9,7 +9,7 @@ import Foundation
 
 class PlayerCountViewModel: ObservableObject {
     
-    @Published var playerCount: Int = 0
+    @Published var playerCount: Int = 5
     let playerRange = 0...10
     
     func increamentPlayerCount() {

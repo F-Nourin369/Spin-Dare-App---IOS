@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		2642BA9E2E4C79E500CA30E1 /* Exceptions for "SpinDareGame" folder in "SpinDareGame" target */ = {
+		26FA5AA72E532B3500C701FF /* Exceptions for "SpinDareGame" folder in "SpinDareGame" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -48,7 +48,7 @@
 		264108112E45BE0B00120501 /* SpinDareGame */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				2642BA9E2E4C79E500CA30E1 /* Exceptions for "SpinDareGame" folder in "SpinDareGame" target */,
+				26FA5AA72E532B3500C701FF /* Exceptions for "SpinDareGame" folder in "SpinDareGame" target */,
 			);
 			path = SpinDareGame;
 			sourceTree = "<group>";
@@ -76,6 +76,11 @@
 		265B77FE2E53256600D22B49 /* App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = App;
+			sourceTree = "<group>";
+		};
+		265B78002E53268400D22B49 /* Resource */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -108,6 +113,7 @@
 		264108062E45BE0B00120501 = {
 			isa = PBXGroup;
 			children = (
+				265B78002E53268400D22B49 /* Resource */,
 				265B77FE2E53256600D22B49 /* App */,
 				265B77FC2E53251300D22B49 /* Infra */,
 				265B77FA2E5324FF00D22B49 /* Domain */,
@@ -150,6 +156,7 @@
 				265B77FA2E5324FF00D22B49 /* Domain */,
 				265B77FC2E53251300D22B49 /* Infra */,
 				265B77FE2E53256600D22B49 /* App */,
+				265B78002E53268400D22B49 /* Resource */,
 			);
 			name = SpinDareGame;
 			packageProductDependencies = (

@@ -10,7 +10,6 @@ import SwiftUI
 struct CustomNavigationView: View {
     var body: some View {
         ZStack {
-            
                 Rectangle()
                 .fill(
                     LinearGradient(
@@ -23,7 +22,6 @@ struct CustomNavigationView: View {
                     colors: [Color.red, Color.black],
                     startPoint: .leading,
                     endPoint: .trailing ))
-            
         }
     }
 }
