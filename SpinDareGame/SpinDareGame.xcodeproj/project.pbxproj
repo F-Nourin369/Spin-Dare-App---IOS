@@ -6,6 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2604745F2E5595DA00172ADC /* PlayerCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260474542E5595DA00172ADC /* PlayerCountView.swift */; };
+		260474602E5595DA00172ADC /* QuestionAcceptingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604744E2E5595DA00172ADC /* QuestionAcceptingViewModel.swift */; };
+		260474612E5595DA00172ADC /* PlayerCountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260474562E5595DA00172ADC /* PlayerCountViewModel.swift */; };
+		260474622E5595DA00172ADC /* AppNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260474592E5595DA00172ADC /* AppNameView.swift */; };
+		260474632E5595DA00172ADC /* QuestionAcceptingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604744B2E5595DA00172ADC /* QuestionAcceptingView.swift */; };
+		260474642E5595DA00172ADC /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604744C2E5595DA00172ADC /* QuestionView.swift */; };
+		260474652E5595DA00172ADC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604745A2E5595DA00172ADC /* SplashView.swift */; };
+		260474662E5595DA00172ADC /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260474512E5595DA00172ADC /* CustomNavigationView.swift */; };
+		260474672E5595DA00172ADC /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260474532E5595DA00172ADC /* CounterView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2641081D2E45BE0C00120501 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +36,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2604744B2E5595DA00172ADC /* QuestionAcceptingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAcceptingView.swift; sourceTree = "<group>"; };
+		2604744C2E5595DA00172ADC /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		2604744E2E5595DA00172ADC /* QuestionAcceptingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAcceptingViewModel.swift; sourceTree = "<group>"; };
+		260474512E5595DA00172ADC /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		260474532E5595DA00172ADC /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		260474542E5595DA00172ADC /* PlayerCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCountView.swift; sourceTree = "<group>"; };
+		260474562E5595DA00172ADC /* PlayerCountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCountViewModel.swift; sourceTree = "<group>"; };
+		260474592E5595DA00172ADC /* AppNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNameView.swift; sourceTree = "<group>"; };
+		2604745A2E5595DA00172ADC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		2641080F2E45BE0B00120501 /* SpinDareGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinDareGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2641081C2E45BE0C00120501 /* SpinDareGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinDareGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		264108262E45BE0C00120501 /* SpinDareGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinDareGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,11 +61,6 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		263EB6EE2E49E59400CF8589 /* Screens */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Screens;
-			sourceTree = "<group>";
-		};
 		264108112E45BE0B00120501 /* SpinDareGame */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -110,14 +126,110 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2604744D2E5595DA00172ADC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2604744B2E5595DA00172ADC /* QuestionAcceptingView.swift */,
+				2604744C2E5595DA00172ADC /* QuestionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2604744F2E5595DA00172ADC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2604744E2E5595DA00172ADC /* QuestionAcceptingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		260474502E5595DA00172ADC /* 3QuestionAcceptingView */ = {
+			isa = PBXGroup;
+			children = (
+				2604744D2E5595DA00172ADC /* View */,
+				2604744F2E5595DA00172ADC /* ViewModel */,
+			);
+			path = 3QuestionAcceptingView;
+			sourceTree = "<group>";
+		};
+		260474522E5595DA00172ADC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				260474512E5595DA00172ADC /* CustomNavigationView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		260474552E5595DA00172ADC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				260474532E5595DA00172ADC /* CounterView.swift */,
+				260474542E5595DA00172ADC /* PlayerCountView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		260474572E5595DA00172ADC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				260474562E5595DA00172ADC /* PlayerCountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		260474582E5595DA00172ADC /* ScreenOnePlayerCountView */ = {
+			isa = PBXGroup;
+			children = (
+				260474552E5595DA00172ADC /* View */,
+				260474572E5595DA00172ADC /* ViewModel */,
+			);
+			path = ScreenOnePlayerCountView;
+			sourceTree = "<group>";
+		};
+		2604745B2E5595DA00172ADC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				260474592E5595DA00172ADC /* AppNameView.swift */,
+				2604745A2E5595DA00172ADC /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2604745C2E5595DA00172ADC /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				2604745B2E5595DA00172ADC /* View */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+		2604745D2E5595DA00172ADC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				260474502E5595DA00172ADC /* 3QuestionAcceptingView */,
+				260474522E5595DA00172ADC /* Components */,
+				260474582E5595DA00172ADC /* ScreenOnePlayerCountView */,
+				2604745C2E5595DA00172ADC /* SplashView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2604745E2E5595DA00172ADC /* Present 2 */ = {
+			isa = PBXGroup;
+			children = (
+				2604745D2E5595DA00172ADC /* Screens */,
+			);
+			path = "Present 2";
+			sourceTree = "<group>";
+		};
 		264108062E45BE0B00120501 = {
 			isa = PBXGroup;
 			children = (
+				2604745E2E5595DA00172ADC /* Present 2 */,
 				265B78002E53268400D22B49 /* Resource */,
 				265B77FE2E53256600D22B49 /* App */,
 				265B77FC2E53251300D22B49 /* Infra */,
 				265B77FA2E5324FF00D22B49 /* Domain */,
-				263EB6EE2E49E59400CF8589 /* Screens */,
 				264108112E45BE0B00120501 /* SpinDareGame */,
 				2641081F2E45BE0C00120501 /* SpinDareGameTests */,
 				264108292E45BE0C00120501 /* SpinDareGameUITests */,
@@ -151,7 +263,6 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				263EB6EE2E49E59400CF8589 /* Screens */,
 				264108112E45BE0B00120501 /* SpinDareGame */,
 				265B77FA2E5324FF00D22B49 /* Domain */,
 				265B77FC2E53251300D22B49 /* Infra */,
@@ -287,6 +398,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2604745F2E5595DA00172ADC /* PlayerCountView.swift in Sources */,
+				260474602E5595DA00172ADC /* QuestionAcceptingViewModel.swift in Sources */,
+				260474612E5595DA00172ADC /* PlayerCountViewModel.swift in Sources */,
+				260474622E5595DA00172ADC /* AppNameView.swift in Sources */,
+				260474632E5595DA00172ADC /* QuestionAcceptingView.swift in Sources */,
+				260474642E5595DA00172ADC /* QuestionView.swift in Sources */,
+				260474652E5595DA00172ADC /* SplashView.swift in Sources */,
+				260474662E5595DA00172ADC /* CustomNavigationView.swift in Sources */,
+				260474672E5595DA00172ADC /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
