@@ -13,6 +13,7 @@ struct SplashView: View {
     @State var showSplash: Bool = true
     @State var zoomIn : Bool = false
     @State var showAppName: Bool = false
+//    @EnvironmentObject var coordinator: Coordinator
     
     var body: some View {
         VStack {

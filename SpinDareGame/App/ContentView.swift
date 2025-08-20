@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var coordinator: Coordinator
+    
     var body: some View {
-       SplashView()
+    //    coordinator.push(.splash)
     }
 }
 

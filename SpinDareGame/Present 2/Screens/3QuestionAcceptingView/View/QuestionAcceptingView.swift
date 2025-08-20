@@ -11,8 +11,14 @@ struct QuestionAcceptingView: View {
     
     @Binding var numberOfPlayers: Int
     @StateObject var viewModel = QuestionAcceptingViewModel()
+    @EnvironmentObject var coordinator: Coordinator
     
     var body: some View {
+        CustomNavigationView(leadingButtonAction: {
+            coordinator.pop()
+        }) {
+            
+        }
         ScrollView {
             ZStack {
                 Color.black
@@ -36,6 +42,7 @@ struct QuestionAcceptingView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 

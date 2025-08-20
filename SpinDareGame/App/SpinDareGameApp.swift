@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct SpinDareGameApp: App {
+    @StateObject private var coordinator = Coordinator()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack(path: $coordinator.path) {
+                coordinator.build(page: .splash)
+                    .navigationDestination(for: Page.self) {page in
+                        coordinator.build(page: page)
+                    }
+            }
+            .environmentObject(coordinator)
         }
     }
 }

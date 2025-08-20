@@ -8,6 +8,4 @@
 import Foundation
 class QuestionAcceptingViewModel : ObservableObject {
     @Published var questions: [String] = Array(repeating: "", count: 10)
-    
-
 }

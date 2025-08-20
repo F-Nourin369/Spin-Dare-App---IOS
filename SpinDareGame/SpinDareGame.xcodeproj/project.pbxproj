@@ -61,6 +61,16 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		260475DC2E559CF300172ADC /* Constant */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		260479862E559EE600172ADC /* Navigation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		264108112E45BE0B00120501 /* SpinDareGame */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -217,6 +227,7 @@
 		2604745E2E5595DA00172ADC /* Present 2 */ = {
 			isa = PBXGroup;
 			children = (
+				260479862E559EE600172ADC /* Navigation */,
 				2604745D2E5595DA00172ADC /* Screens */,
 			);
 			path = "Present 2";
@@ -225,6 +236,7 @@
 		264108062E45BE0B00120501 = {
 			isa = PBXGroup;
 			children = (
+				260475DC2E559CF300172ADC /* Constant */,
 				2604745E2E5595DA00172ADC /* Present 2 */,
 				265B78002E53268400D22B49 /* Resource */,
 				265B77FE2E53256600D22B49 /* App */,
@@ -263,6 +275,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				260475DC2E559CF300172ADC /* Constant */,
+				260479862E559EE600172ADC /* Navigation */,
 				264108112E45BE0B00120501 /* SpinDareGame */,
 				265B77FA2E5324FF00D22B49 /* Domain */,
 				265B77FC2E53251300D22B49 /* Infra */,
